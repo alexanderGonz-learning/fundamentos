@@ -16,7 +16,7 @@ const Title = ({ uiColor, children }) => { // Css y Defracturacion
         )
 
 }
-class AppCssDefracturizacion extends React.Component {
+class AppCssDesestructuracion extends React.Component {
     state = {
         uiColor: 'tomato'
     }
@@ -33,4 +33,4 @@ class AppCssDefracturizacion extends React.Component {
         )
     }
 }
-export default AppCssDefracturizacion
+export default AppCssDesestructuracion

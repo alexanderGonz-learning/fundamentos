@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import TarjetaFruta from '../TarjetaFruta/'
+import TarjetaFruta from '../../TarjetaFruta'
 
 
 const AppFundamentos = () => ( //fundamentos
