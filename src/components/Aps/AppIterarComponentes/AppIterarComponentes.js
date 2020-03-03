@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import './AppIterarComponentes.css'
+import './AppIterarComponentes.module.css'
+import styles from './AppIterarComponentes.module.css'
+
 
 const images = [
   {
@@ -95,17 +97,17 @@ const images = [
 ]
 
 const Image = ({ image }) => (
-  <div className='card'>
+  <div className={styles.card}>
     <img
       src={image.source}
       alt='imagen'
-      className='image'
+      className={styles.image}
     />
-    <div className='footer'>
+    <div className={styles.footer}>
       <img
         src={image.author.avatar}
         alt='Avatar'
-        className='avatar'
+        className={styles.avatar}
       />
       <div>
         {image.author.name}
@@ -123,7 +125,7 @@ class AppIterarComponentes extends Component {
   }
   render () {
     return (
-      <div className='images'>
+      <div className={styles.images}>
         {images.map(image => (
           <Image 
             image={image}

@@ -1,6 +1,7 @@
 import React from 'react'
-import ReactDOM from 'react-dom' 
-import AppIterarComponentes from './components/Aps/AppIterarComponentes'
+import ReactDOM from 'react-dom'
+//import AppIterarComponentes from './components/Aps/AppIterarComponentes'
+import AppIterarListas from "./components/Aps/AppIterarListas";
 //import App from './App'
 //import AppIterarArrays from './components/Aps/AppIterarArrays'
 //import AppIterarObjetos from './components/Aps/AppIterarObjetos'
@@ -10,4 +11,4 @@ import AppIterarComponentes from './components/Aps/AppIterarComponentes'
 //import AppPortalesPropTypes from './components/Aps/AppPortalesPropTypes'
 //import './destructuracion'
 
-ReactDOM.render(<AppIterarComponentes/>, document.getElementById('root'))
+ReactDOM.render(<AppIterarListas/>, document.getElementById('root'))
