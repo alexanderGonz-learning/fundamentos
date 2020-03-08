@@ -21,6 +21,12 @@ import ReactDOM from 'react-dom'
 // import Checkbox from "./components/Aps/Formularios/Checkbox";
 // import Errores from './components/Aps/Errores/Errores';
 // import PeticionConFetch from './components/Aps/Http/PeticionConFetch';
-import AppPeliculas from './components/Aps/Http/AppPeliculas';
+// import AppPeliculas from './components/Aps/Http/AppPeliculas';
+// import AppPeliculasAxios from './components/Aps/Http/AppPeliculasAxios';
+// import AppPeliculasAsyncAwait from './components/Aps/Http/AppPeliculasAsyncAwait';
+// import Introduccion from './components/Aps/CiclosDeVida/Introduccion';
+// import Constructor from './components/Aps/CiclosDeVida/Constructor';
+// import GetSnapShotBeforeUpdate from './components/Aps/CiclosDeVida/GetSnapShotBeforeUpdate';
+import ShouldComponentUpdate from './components/Aps/CiclosDeVida/ShouldComponentUpdate';
 
-ReactDOM.render(<AppPeliculas/>, document.getElementById('root'))
+ReactDOM.render(<ShouldComponentUpdate/>, document.getElementById('root'))

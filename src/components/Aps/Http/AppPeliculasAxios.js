@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
-class AppPeliculas extends Component {
+class AppPeliculasAxios extends Component {
   state = {
     movie: {},
     isFetching: false
@@ -12,9 +13,16 @@ class AppPeliculas extends Component {
     const url = 'http://www.omdbapi.com/?i=tt3896198&apikey=5c24385e'
 
     this.setState({ isFetching: true })
-    fetch(url + '&t=' + title)
-      .then(res => res.json())
-      .then(data => this.setState({movie: data, isFetching: false }))
+
+    axios.get(url, {
+      params:{
+        t: title
+      }
+    })
+      .then(res => this.setState({
+        movie: res.data, 
+        isFetching: false 
+      }))
   }
 
   render () {
@@ -22,7 +30,7 @@ class AppPeliculas extends Component {
 
     return(
       <div>
-        <h1>AppPeliculas</h1>
+        <h1>AppPeliculasAxios</h1>
         <form onSubmit={this.handleSubmit}>
           <input 
             type='text'
@@ -30,10 +38,10 @@ class AppPeliculas extends Component {
           />
           <button>Buscar</button>
         </form>
-        { isFetching && (
+        { isFetching && ( //CONDICIONAL PARA MOSTRAR EL MENSAJE
           <h2>Cargando...</h2>
         )}
-        { movie.Title && !isFetching && (
+        { movie.Title && !isFetching && ( //CONDICIONAL PARA MOSTRAR EL POSTER
           <div>
             <h1>{ movie.Title }</h1>
             <p>
@@ -54,4 +62,4 @@ class AppPeliculas extends Component {
 }
 
 
-export default AppPeliculas
+export default AppPeliculasAxios
