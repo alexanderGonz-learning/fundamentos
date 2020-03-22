@@ -27,6 +27,13 @@ import ReactDOM from 'react-dom'
 // import Introduccion from './components/Aps/CiclosDeVida/Introduccion';
 // import Constructor from './components/Aps/CiclosDeVida/Constructor';
 // import GetSnapShotBeforeUpdate from './components/Aps/CiclosDeVida/GetSnapShotBeforeUpdate';
-import ShouldComponentUpdate from './components/Aps/CiclosDeVida/ShouldComponentUpdate';
-
-ReactDOM.render(<ShouldComponentUpdate/>, document.getElementById('root'))
+// import ShouldComponentUpdate from './components/Aps/CiclosDeVida/ShouldComponentUpdate';
+// import PadreHijo from './components/Aps/Comunicacion/PadreHijo';
+// import HijoPadre from './components/Aps/Comunicacion/HijoPadre';
+// import ParentComponent from './components/Aps/Comunicacion/ParentComponent';
+// import ObserverPattern from './components/Aps/Comunicacion/ObserverPAttern';
+// import APIContext from './components/Aps/Comunicacion/APIContext';
+// import RenderProp from './components/Aps/Comunicacion/RenderProp';
+// import RenderProp2 from './components/Aps/Comunicacion/RenderProp2';
+import HOC from './components/Aps/Comunicacion/HOC';
+ReactDOM.render(<HOC/>, document.getElementById('root'))
