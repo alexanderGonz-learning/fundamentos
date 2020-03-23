@@ -35,5 +35,22 @@ import ReactDOM from 'react-dom'
 // import APIContext from './components/Aps/Comunicacion/APIContext';
 // import RenderProp from './components/Aps/Comunicacion/RenderProp';
 // import RenderProp2 from './components/Aps/Comunicacion/RenderProp2';
-import HOC from './components/Aps/Comunicacion/HOC';
-ReactDOM.render(<HOC/>, document.getElementById('root'))
+// import HOC from './components/Aps/Comunicacion/HOC';
+// import HOCConfiguracion from './components/Aps/Comunicacion/HOCConfiguracion';
+// import HOCEjemploSize from './components/Aps/Comunicacion/HOCEjemploSize';
+// import UseState from './components/Aps/Hooks/UseState';
+// import UseStateBoolean from './components/Aps/Hooks/UseStateBoolean';
+// import UseStateObjetos from './components/Aps/Hooks/UseStateObjetos';
+// import UseStateVariosEstados from './components/Aps/Hooks/UseStateVariosEstados';
+// import UseEffect from './components/Aps/Hooks/UseEffect';
+// import UseEffectEjemplo from './components/Aps/Hooks/UseEffectEjemplo';
+// import UseEffectControlarEjecucion from './components/Aps/Hooks/UseEffectControlarEjecucion';
+// import UseEffectHttp from './components/Aps/Hooks/UseEffectHttp';
+// import UseLayoutEffect from './components/Aps/Hooks/UseLayoutEffect';
+// import UseContext from './components/Aps/Hooks/UseContext';
+// import UseRef from './components/Aps/Hooks/UseRef';
+// import StateEffectRefEjemplo from './components/Aps/Hooks/StateEffectRefEjemplo';
+import HooksTerceros from './components/Aps/Hooks/HooksTerceros';
+
+
+ReactDOM.render(<HooksTerceros/>, document.getElementById('root'))
