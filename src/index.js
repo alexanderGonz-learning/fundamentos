@@ -50,7 +50,17 @@ import ReactDOM from 'react-dom'
 // import UseContext from './components/Aps/Hooks/UseContext';
 // import UseRef from './components/Aps/Hooks/UseRef';
 // import StateEffectRefEjemplo from './components/Aps/Hooks/StateEffectRefEjemplo';
-import HooksTerceros from './components/Aps/Hooks/HooksTerceros';
+// import HooksTerceros from './components/Aps/Hooks/HooksTerceros';
+// import UseReducer from './components/Aps/Hooks/UseReducer';
+// import UseImperativeHandle from './components/Aps/Hooks/UseImperativeHandle';
+// import ReactMemo from './components/Aps/Hooks/ReactMemo';
+// import ReactMemoNested from './components/Aps/Hooks/ReactMemoNested';
+// import UseCallback from './components/Aps/Hooks/UseCallback';
+// import UseCallbackDependencias from './components/Aps/Hooks/UseCallbackDependencias';
+// import UseMemo from './components/Aps/Hooks/UseMemo';
+// import HooksPersonalizados from './components/Aps/Hooks/HooksPersonalizados';
+// import UseDebugValue from './components/Aps/Hooks/UseDebugValue';
+import HooksPersonalizadosHttp from './components/Aps/Hooks/HooksPersonalizadosHttp';
 
 
-ReactDOM.render(<HooksTerceros/>, document.getElementById('root'))
+ReactDOM.render(<HooksPersonalizadosHttp/>, document.getElementById('root'))

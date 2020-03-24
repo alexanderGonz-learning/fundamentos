@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header style={styles}>
       <h1>
-        Hook useEffect (Solicitud Http)
+        Hooks Personalizados Http
         <span
           role='img'
           aria-label='hook emoji'
@@ -26,27 +26,37 @@ const Header = () => {
   )
 }
 
-const App = () => {
-  const [ users, setUsers ] = useState([])
+const useFetch = (url) => {
+  const [ data, setData ] = useState([])
   const [ isFetching, setFetching ] = useState(true)
-  
+
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
+    fetch(url)
       .then(res => res.json())
-      .then(users => {
-        setUsers(users)
+      .then(data => {
+        setData(data)
         setFetching(false)
       })
-  }, []) // Array vacio para que solo se jecute una vez
-  
+
+  }, [ url ]) //Dependencia para que se vuelva a ejecutar
+
+  return [ //Devolvemos un array para que al consumir este hook, estos valores puedan ser renombradas
+    data,
+    isFetching
+  ]
+}
+
+const App = () => {
+  const [ users, isLoading ] = useFetch('https://jsonplaceholder.typicode.com/users')
+
   return (
     <>
-      <Header /> 
-      { isFetching && <h1>Cargando...</h1> }
+      <Header />
+      { isLoading && <h1>Cargando...</h1>}
       <ul>
-        { users.map(user => (
+        {users.map(user => (
           <li key={user.id}>
-             {user.name}
+            { user.name}
           </li>
         ))}
       </ul>

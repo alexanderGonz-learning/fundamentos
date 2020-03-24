@@ -42,7 +42,7 @@ const App = () => {
           .then(data => setProducts(data.products))
       }
     }, 600)
-  }, [ name ])
+  }, [ name ]) //Se dispara solo cuando la propiedad que le pasamos ha cambiado
 
   const handleInput = (e) => {
     setName(e.target.value)
