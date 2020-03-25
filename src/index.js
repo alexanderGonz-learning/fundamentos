@@ -60,7 +60,13 @@ import ReactDOM from 'react-dom'
 // import UseMemo from './components/Aps/Hooks/UseMemo';
 // import HooksPersonalizados from './components/Aps/Hooks/HooksPersonalizados';
 // import UseDebugValue from './components/Aps/Hooks/UseDebugValue';
-import HooksPersonalizadosHttp from './components/Aps/Hooks/HooksPersonalizadosHttp';
+// import HooksPersonalizadosHttp from './components/Aps/Hooks/HooksPersonalizadosHttp';
+// import HooksPersonalizadosHttp2 from './components/Aps/Hooks/HooksPersonalizadosHttp2';
+// import Children from './components/Aps/Children/Children';
+// import ReactChildren from './components/Aps/Children/ReactChildren';
+// import Composicion from './components/Aps/Children/Composicion';
+// import Workshop from './components/Aps/Children/Workshop';
+import LazySuspense from './components/Aps/DivisionLazy/LazySuspense';
 
 
-ReactDOM.render(<HooksPersonalizadosHttp/>, document.getElementById('root'))
+ReactDOM.render(<LazySuspense />, document.getElementById('root'))
